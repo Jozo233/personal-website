@@ -1,0 +1,44 @@
+---
+import Layout from "../layouts/Layout.astro"
+import { SOCIALS } from "../config"
+---
+
+<Layout title="Jozo">
+    <main 
+    class="mt-24 flex flex-col items-center justify-center md:mt-64 md:flex-row">
+
+        <section class="text-center md:ml-6 md:text-left">
+
+            <div>
+                <h1 
+                class="text-6xl font-extrabold text-white">
+                    Jozo_85</h1>
+                <p 
+                class="mt-2 text-xl text-purple-400">
+                    An programing and mechanic student</p>
+            </div>
+
+            <ul 
+            class="my-5 flex justify-center text-white md:justify-start">
+                {
+                  SOCIALS.map((social) => (
+                    <li class="mr-4">
+                      <a class="h-10 w-10" href={social.link} title={social.name}>
+                        <img
+                          class="h-8 w-8 transition-all hover:-translate-y-1"
+                          src={`/icons/${social.icon}`}
+                          alt={`${social.name} icon`}
+                        />
+                      </a>
+                    </li>
+                  ))
+                }
+              </ul>
+        </section>
+
+
+
+
+        
+    </main>
+</Layout>
