@@ -7,7 +7,12 @@ export const SOCIALS = [
     {
         name: "Discord",
         link: "https://github.com/Jozo233",
-        icon: "discord.svg"
+        icon: "discord.svg",
+    },
+    {
+        name: "Buymecoffie",
+        link: "https://buymeacoffee.com/jozo52518w",
+        icon: "discord.svg",
     }
 ] satisfies {
     name: string;
